@@ -10,7 +10,7 @@ export default function About() {
         </p>
 
         <p className="text-gray-400 mb-6">
-          I bring 8.7+ years of experience across finance, insurance, e-commerce, and analytics-driven consulting, where I have worked on translating ambiguous business problems into structured, data-driven solutions. :contentReference[oaicite:0]{index=0}
+          I bring 8.7+ years of experience across finance, insurance, e-commerce, and analytics-driven consulting, where I have worked on translating ambiguous business problems into structured, data-driven solutions.
         </p>
 
         <p className="text-gray-400 mb-6">
@@ -29,7 +29,7 @@ export default function About() {
         <h2 className="text-2xl font-semibold mt-10 mb-4">Technical Focus</h2>
 
         <p className="text-gray-400 mb-6">
-          I work extensively with Python, SQL, LangChain, LangGraph, and modern LLM tooling. My experience includes building systems with prompt engineering, orchestration pipelines, validation layers, and integrating AI into scalable backend systems. :contentReference[oaicite:1]{index=1}
+          I work extensively with Python, SQL, LangChain, LangGraph, and modern LLM tooling. My experience includes building systems with prompt engineering, orchestration pipelines, validation layers, and integrating AI into scalable backend systems.
         </p>
 
         <h2 className="text-2xl font-semibold mt-10 mb-4">Professional Experience</h2>
