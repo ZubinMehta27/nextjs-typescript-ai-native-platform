@@ -9,16 +9,41 @@ export default function Contact() {
           Feel free to reach out for collaborations or opportunities.
         </p>
 
-        <p className="text-gray-400 mb-2">
-          Email: zubin.mehta11@gmail.com
+        {/* EMAIL */}
+        <p className="text-gray-400 mb-3">
+          Email:
+          <a 
+            href="mailto:zubin.mehta11@gmail.com"
+            className="text-blue-400 hover:underline ml-2"
+          >
+            zubin.mehta11@gmail.com
+          </a>
         </p>
 
-        <p className="text-gray-400 mb-2">
-          GitHub: https://github.com/ZubinMehta27
+        {/* GITHUB */}
+        <p className="text-gray-400 mb-3">
+          GitHub:
+          <a 
+            href="https://github.com/ZubinMehta27"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline ml-2"
+          >
+            github.com/ZubinMehta27
+          </a>
         </p>
 
+        {/* LINKEDIN */}
         <p className="text-gray-400">
-          LinkedIn: https://linkedin.com/in/iamzubinmehta
+          LinkedIn:
+          <a 
+            href="https://www.linkedin.com/in/iamzubinmehta"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline ml-2"
+          >
+            linkedin.com/in/iamzubinmehta
+          </a>
         </p>
 
       </div>
