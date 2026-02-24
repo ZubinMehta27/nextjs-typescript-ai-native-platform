@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* ============================= */
 /* Theme Variables */
@@ -9,16 +7,11 @@
 :root {
   --background: #fafafa;
   --foreground: #111111;
-
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 /* ============================= */
-/* Global Behavior */
+/* Base Styling */
 /* ============================= */
 
 html {
@@ -33,13 +26,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Premium selection styling */
 ::selection {
   background: #111111;
   color: #ffffff;
 }
 
-/* Section baseline */
 section {
   position: relative;
 }
