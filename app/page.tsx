@@ -5,11 +5,11 @@ export default function Home() {
 
         {/* HERO */}
         <section className="mb-24">
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-6xl font-bold mb-6 leading-tight">
             Zubin Mehta
           </h1>
 
-          <p className="text-xl text-gray-400 max-w-2xl mb-6">
+          <p className="text-xl text-gray-400 max-w-2xl mb-6 leading-relaxed">
             AI Engineer focused on building real-world LLM and agentic systems that solve practical business problems.
           </p>
 
@@ -41,7 +41,7 @@ export default function Home() {
             Featured Work
           </h2>
 
-          <div className="border border-gray-800 p-6 rounded-xl">
+          <div className="border border-gray-800 p-6 rounded-2xl hover:border-gray-600 hover:bg-white/5 transition duration-300">
             <h3 className="text-xl font-medium mb-2">
               Text-to-SQL AI System
             </h3>
