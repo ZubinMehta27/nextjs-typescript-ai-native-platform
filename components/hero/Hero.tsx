@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SocialIcons from "@/components/ui/SocialIcons";
 
 export default function Hero() {
   return (
-    <section className="pt-32 pb-24">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <section className="pt-36 pb-28">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
 
         {/* LEFT CONTENT */}
         <motion.div
@@ -14,37 +15,48 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm uppercase tracking-[0.25em] text-neutral-500 mb-6">
-            AI Engineer
+          <p className="text-sm uppercase tracking-[0.3em] text-neutral-500 mb-6">
+            Lead AI / ML Engineer
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight leading-[1.1] mb-8">
-            Building Intelligent Systems
+          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] mb-8">
+            Enterprise-Grade AI
             <br />
-            That Scale.
+            Systems Architecture
           </h1>
 
-          <p className="text-lg text-neutral-600 max-w-xl mb-10 leading-relaxed">
-            I design and deploy production-grade AI systems, LLM-powered
-            applications, and intelligent automation pipelines that create
-            measurable business impact.
+          <p className="text-lg text-neutral-600 max-w-xl mb-6 leading-relaxed">
+            Specializing in multi-agent orchestration, LLM validation
+            frameworks, and production-ready intelligent systems
+            aligned with measurable business outcomes.
           </p>
 
+          {/* Credibility Micro-Layer */}
+          <p className="text-sm text-neutral-500 mb-10 leading-relaxed">
+            Currently leading multi-agent AI architecture at Virtusa.
+            Previously delivered $12M+ in analytics-driven enterprise value.
+          </p>
+
+          {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
             <a
-              href="#experience"
+              href="#projects"
               className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
             >
-              View Work
+              View Projects
             </a>
 
             <a
               href="/resume.pdf"
+              download
               className="border border-neutral-300 px-6 py-3 rounded-xl text-sm font-medium hover:bg-neutral-100 transition"
             >
               Download Resume
             </a>
           </div>
+
+          {/* Social Icons */}
+          <SocialIcons />
         </motion.div>
 
         {/* RIGHT IMAGE */}
@@ -54,7 +66,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <div className="relative rounded-3xl overflow-hidden border border-neutral-200 shadow-xl">
+          <div className="relative rounded-3xl overflow-hidden border border-neutral-200 shadow-2xl">
             <Image
               src="/profile.jpg"
               alt="Zubin Mehta"
@@ -65,12 +77,12 @@ export default function Hero() {
               className="object-cover"
             />
           </div>
+
+          {/* Subtle Glow Layer */}
+          <div className="absolute -z-10 top-8 left-8 w-full h-full bg-neutral-200/40 rounded-3xl blur-2xl" />
         </motion.div>
 
       </div>
     </section>
   );
 }
-import SocialIcons from "@/components/ui/SocialIcons";
-
-<SocialIcons />
