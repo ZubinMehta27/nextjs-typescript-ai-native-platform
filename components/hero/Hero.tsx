@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import SocialIcons from "@/components/ui/SocialIcons";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -38,12 +39,12 @@ export default function Hero() {
 
           {/* Primary CTA */}
           <div className="flex flex-wrap gap-4 mb-8">
-            <a
-              href="#projects"
+            <Link
+              href="/projects"
               className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
             >
               View Projects
-            </a>
+            </Link>
           </div>
 
           {/* Social Icons */}

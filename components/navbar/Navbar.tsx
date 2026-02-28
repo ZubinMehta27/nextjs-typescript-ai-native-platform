@@ -6,7 +6,6 @@ import Link from "next/link";
 const sections = [
   { id: "experience", label: "Experience" },
   { id: "services", label: "Services" },
-  { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -44,9 +43,10 @@ export default function Navbar() {
           ZUBINMEHTA
         </Link>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-10 text-sm text-neutral-600">
 
+          {/* Scroll Sections */}
           {sections.map((section) => (
             <a
               key={section.id}
@@ -67,7 +67,15 @@ export default function Navbar() {
             </a>
           ))}
 
-          {/* Blog Link */}
+          {/* Projects (Dedicated Page) */}
+          <Link
+            href="/projects"
+            className="hover:text-black transition"
+          >
+            Projects
+          </Link>
+
+          {/* Blog */}
           <Link
             href="/blog"
             className="hover:text-black transition"
