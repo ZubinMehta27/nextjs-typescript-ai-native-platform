@@ -49,7 +49,7 @@ export default function Hero() {
               download
               className="border border-neutral-300 px-6 py-3 rounded-xl text-sm font-medium hover:bg-neutral-100 transition"
             >
-              Download Resume
+              Download CV (PDF)
             </a>
           </div>
 
