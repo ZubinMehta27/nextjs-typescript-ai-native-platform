@@ -3,7 +3,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const sections = ["experience", "services", "contact"];
+const sections = [
+  { id: "experience", label: "Experience" },
+  { id: "services", label: "Services" },
+  { id: "projects", label: "Projects" },
+  { id: "contact", label: "Contact" },
+];
 
 export default function Navbar() {
   const [active, setActive] = useState<string>("");
@@ -12,11 +17,11 @@ export default function Navbar() {
     const handleScroll = () => {
       let current = "";
       sections.forEach((section) => {
-        const el = document.getElementById(section);
+        const el = document.getElementById(section.id);
         if (el) {
           const rect = el.getBoundingClientRect();
           if (rect.top <= 120) {
-            current = section;
+            current = section.id;
           }
         }
       });
@@ -28,40 +33,57 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md border-b border-neutral-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
 
+        {/* Logo */}
         <Link
           href="/"
-          className="text-lg font-semibold tracking-tight"
+          className="text-lg font-semibold tracking-tight hover:opacity-80 transition"
         >
           ZUBINMEHTA
         </Link>
 
-        <nav className="hidden md:flex gap-8 text-sm text-neutral-600">
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-10 text-sm text-neutral-600">
+
           {sections.map((section) => (
             <a
-              key={section}
-              href={`#${section}`}
+              key={section.id}
+              href={`#${section.id}`}
               className={`relative transition ${
-                active === section ? "text-black" : "hover:text-black"
+                active === section.id
+                  ? "text-black"
+                  : "hover:text-black"
               }`}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {section.label}
+
               <span
                 className={`absolute left-0 -bottom-1 h-[1px] bg-black transition-all duration-300 ${
-                  active === section ? "w-full" : "w-0"
+                  active === section.id ? "w-full" : "w-0"
                 }`}
               />
             </a>
           ))}
 
+          {/* Blog Link */}
+          <Link
+            href="/blog"
+            className="hover:text-black transition"
+          >
+            Blog
+          </Link>
+
+          {/* Resume Button */}
           <a
             href="/resume.pdf"
-            className="ml-6 bg-black text-white px-4 py-2 rounded-lg hover:opacity-90 transition"
+            download
+            className="ml-4 bg-black text-white px-5 py-2 rounded-xl text-sm font-medium tracking-wide hover:opacity-90 transition"
           >
-            Resume
+            Download CV
           </a>
+
         </nav>
       </div>
     </header>

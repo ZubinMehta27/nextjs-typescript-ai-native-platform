@@ -6,16 +6,16 @@ import SocialIcons from "@/components/ui/SocialIcons";
 
 export default function Hero() {
   return (
-    <section className="pt-36 pb-28">
+    <section className="pt-36 pb-32">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
 
         {/* LEFT CONTENT */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-neutral-500 mb-6">
+          <p className="text-xs uppercase tracking-[0.35em] text-neutral-500 mb-6">
             Lead AI / ML Engineer
           </p>
 
@@ -27,7 +27,8 @@ export default function Hero() {
 
           <p className="text-lg text-neutral-600 max-w-xl mb-6 leading-relaxed">
             Designing and deploying LLM orchestration frameworks,
-            validation pipelines, and enterprise-scale intelligent systems.
+            deterministic validation pipelines, and enterprise-scale
+            intelligent systems built for reliability.
           </p>
 
           <p className="text-sm text-neutral-500 mb-10 leading-relaxed">
@@ -35,21 +36,13 @@ export default function Hero() {
             Delivered $12M+ in analytics-driven enterprise value.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4">
+          {/* Primary CTA */}
+          <div className="flex flex-wrap gap-4 mb-8">
             <a
               href="#projects"
               className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium hover:opacity-90 transition"
             >
               View Projects
-            </a>
-
-            <a
-              href="/resume.pdf"
-              download
-              className="border border-neutral-300 px-6 py-3 rounded-xl text-sm font-medium hover:bg-neutral-100 transition"
-            >
-              Download CV (PDF)
             </a>
           </div>
 
@@ -76,7 +69,7 @@ export default function Hero() {
             />
           </div>
 
-          {/* Subtle depth layer */}
+          {/* Subtle Depth Layer */}
           <div className="absolute -z-10 top-8 left-8 w-full h-full bg-neutral-200/40 rounded-3xl blur-2xl" />
         </motion.div>
 
