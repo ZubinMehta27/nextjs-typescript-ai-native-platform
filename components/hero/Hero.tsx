@@ -71,3 +71,6 @@ export default function Hero() {
     </section>
   );
 }
+import SocialIcons from "@/components/ui/SocialIcons";
+
+<SocialIcons />
