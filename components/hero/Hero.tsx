@@ -20,21 +20,19 @@ export default function Hero() {
           </p>
 
           <h1 className="text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] mb-8">
-            Enterprise-Grade AI
+            Production-Grade
             <br />
-            Systems Architecture
+            Multi-Agent AI Systems
           </h1>
 
           <p className="text-lg text-neutral-600 max-w-xl mb-6 leading-relaxed">
-            Specializing in multi-agent orchestration, LLM validation
-            frameworks, and production-ready intelligent systems
-            aligned with measurable business outcomes.
+            Designing and deploying LLM orchestration frameworks,
+            validation pipelines, and enterprise-scale intelligent systems.
           </p>
 
-          {/* Credibility Micro-Layer */}
           <p className="text-sm text-neutral-500 mb-10 leading-relaxed">
-            Currently leading multi-agent AI architecture at Virtusa.
-            Previously delivered $12M+ in analytics-driven enterprise value.
+            Leading multi-agent system development at Virtusa.
+            Delivered $12M+ in analytics-driven enterprise value.
           </p>
 
           {/* CTA Buttons */}
@@ -78,7 +76,7 @@ export default function Hero() {
             />
           </div>
 
-          {/* Subtle Glow Layer */}
+          {/* Subtle depth layer */}
           <div className="absolute -z-10 top-8 left-8 w-full h-full bg-neutral-200/40 rounded-3xl blur-2xl" />
         </motion.div>
 
